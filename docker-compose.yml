@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  terraform:
+    image: 'hashicorp/terraform:light'
+    volumes:
+      - ./src:/app
+      - ~/.aws:/root/.aws
+    working_dir: '/app'
+    entrypoint: ""
